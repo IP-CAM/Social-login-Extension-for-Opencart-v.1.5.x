@@ -1,3 +1,47 @@
+# Authorization through social networks for OpenCart 1.5
+
+The module is a strongly modified version of the version of the "OpenCart Social Authorization by Nikita_Sp" module ``.
+As the author fell into his creation, I developed on its basis the improved version for one of our customers.
+
+## Installation
+
+Installing the standard module for OpenCart 1.5 - simply copy the contents of `upload` in the root of your site. If you have not been installed the original module - copying must pass without any warnings or replacements.
+
+**IMPORTANT**
+
+To work with Twitter API, I used the twitter-async library. It is fixed as submodule in the repository (`System / Libraries / Twitter-Async`) if you download the repository as a zip archive, then you will probably also be needed to download this library separately.
+
+## Transition from OpenCart Social Authorization by nikita_sp
+
+Because The module uses the same routes and persistent variables for settings, the update via the replacement should not spoil your settings.
+
+** However, I do not guarantee anything - follow the golden rule of the IT and make a backup! **
+
+## Difference
+
+1. Fixed work with Facebook
+2. Added authorization through classmates
+3. Added authorization via Twitter
+4. Refactoring and simplify code
+5. ** This version requires the installed PHP-CURL **
+
+## TODO.
+
+1. Add authorization via Instagram
+2. Add it ability to add links to a page via the module
+3. Conduct the code refactoring and add correct processing of API errors
+
+## Why CURL?
+
+This requirement is associated with classmates API, which requires send requests to them.
+In the future, you can make this requirement optional if necessary.
+
+## How to help
+
+If you have found a bug or know how to make the module is better - you can create ** Issues **, and even better send me ** Pull Request **
+
+------
+
 # Авторизация через соцсети для Opencart 1.5
 
 Модуль представляет из себя сильно доработанную версию модуля `"Opencart social authorization by Nikita_SP"`. 
